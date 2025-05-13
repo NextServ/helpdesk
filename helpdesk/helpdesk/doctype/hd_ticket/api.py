@@ -83,7 +83,7 @@ def get_one(name, is_customer_portal=False):
 
 
 def get_meta(template: str):
-    default_fields = ["ticket_type", "agent_group", "priority", "customer"]
+    default_fields = ["ticket_type", "agent_group", "priority", "customer", "servio_deal"]
     DocField = frappe.qb.DocType("DocField")
 
     fields = (
